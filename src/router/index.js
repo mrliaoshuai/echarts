@@ -3,7 +3,20 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const routes = []
+const routes = [
+  {
+    path: '',
+    redirect: '/line'
+  },
+  {
+    path: '/line',
+    component: () => import('@/pages/line')
+  },
+  {
+    path: '/pie',
+    components: () => import('@/pages/pie')
+  }
+]
 
 const router = new VueRouter({
   routes
