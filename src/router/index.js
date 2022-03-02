@@ -13,8 +13,28 @@ const routes = [
     component: () => import('@/pages/line')
   },
   {
+    path: '/bar',
+    component: () => import('@/pages/bar')
+  },
+  {
+    path: '/map',
+    component: () => import('@/pages/map')
+  },
+  {
+    path: '/scatter',
+    component: () => import('@/pages/scatter')
+  },
+  {
     path: '/pie',
-    components: () => import('@/pages/pie')
+    component: () => import('@/pages/pie')
+  },
+  {
+    path: '/gauge',
+    component: () => import('@/pages/gauge')
+  },
+  {
+    path: '/radar',
+    component: () => import('@/pages/radar')
   }
 ]
 
